@@ -16,5 +16,8 @@ class Carnival
     attendee.interests
   end
 
+  def admit(attendee)
+    @attendees << attendee
+  end
 
 end

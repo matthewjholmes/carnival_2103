@@ -64,9 +64,9 @@ RSpec.describe do
   end
 end
 
-# def admit(attendee)
-#   @attendees << attendee
-# end
+def admit(attendee)
+  @attendees << attendee
+end
 
 
 #
