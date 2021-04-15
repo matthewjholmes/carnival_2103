@@ -7,5 +7,8 @@ class Attendee
     @spending_money = spending_money
   end
 
-
+  def interests
+    []
+  end
+  
 end
