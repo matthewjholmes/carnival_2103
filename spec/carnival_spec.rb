@@ -40,11 +40,10 @@ RSpec.describe do
     expect(jeffco_fair.recommend_rides(bob)).to eq (['Ferris Wheel', 'Bumper Cars'])
     expect(jeffco_fair.recommend_rides(sally)).to eq (['Scrambler'])
   end
+
+  it 'has empty attendees array' do
+    jeffco_fair = Carnival.new("Jefferson County Fair")
+
+    expect(jeffco_fair.attendees).to eq([])
+  end
 end
-
-
-# jeffco_fair.recommend_rides(bob)
-# #=> [#<Ride:0x00007fe59506ede8...>, #<Ride:0x00007fe594851930...>]
-#
-# jeffco_fair.recommend_rides(sally)
-# #=> [#<Ride:0x00007fe59314eb98...>]
