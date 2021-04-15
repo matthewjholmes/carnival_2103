@@ -25,35 +25,14 @@ RSpec.describe do
     jeffco_fair.add_ride(ferris_wheel)
     jeffco_fair.add_ride(bumper_cars)
     jeffco_fair.add_ride(scrambler)
-    
-    expect(jeffco_fair.rides).to eq([])
+
+    expect(jeffco_fair.rides).to eq([ferris_wheel, bumper_cars, scrambler])
   end
 
 end
 
-def add_ride(ride)
-  @rides << ride
-end
 
-#
-# ferris_wheel = Ride.new({name: 'Ferris Wheel', cost: 0})
-# #=> #<Ride:0x00007fe59506ede8...>
-#
-# bumper_cars = Ride.new({name: 'Bumper Cars', cost: 10})
-# #=> #<Ride:0x00007fe594851930...>
-#
-# scrambler = Ride.new({name: 'Scrambler', cost: 15})
-# #=> #<Ride:0x00007fe59314eb98...>
-#
-# jeffco_fair.add_ride(ferris_wheel)
-#
-# jeffco_fair.add_ride(bumper_cars)
-#
-# jeffco_fair.add_ride(scrambler)
-#
-# jeffco_fair.rides
-# #=> [#<Ride:0x00007fe59506ede8...>, #<Ride:0x00007fe594851930...>, #<Ride:0x00007fe59314eb98...>]
-#
+
 # bob = Attendee.new('Bob', 20)
 # #=> #<Attendee:0x00007fe59507dc80...>
 #
