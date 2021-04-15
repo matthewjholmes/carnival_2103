@@ -1,7 +1,7 @@
 class Ride
 
 
-  def initialize
+  def initialize(attributes)
 
   end
 
