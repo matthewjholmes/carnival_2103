@@ -5,10 +5,11 @@ class Attendee
   def initialize (name, spending_money)
     @name = name
     @spending_money = spending_money
+    @interests = []
   end
 
-  def interests
-    []
+  def add_interest(activity)
+    @interests << activity
   end
-  
+
 end

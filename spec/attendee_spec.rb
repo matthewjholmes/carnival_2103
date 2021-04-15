@@ -25,12 +25,9 @@ RSpec.describe do
 
     it 'interests array accepts entries' do
       attendee = Attendee.new('Bob', 20)
+      attendee.add_interest('Bumper Cars')
       attendee.add_interest('Ferris Wheel')
 
-      expect(attendee.interests).to eq('Ferris Wheel')
+      expect(attendee.interests).to eq(["Bumper Cars", "Ferris Wheel"])
     end
   end
-
-  # attendee.add_interest('Ferris Wheel')
-  #
-  # attendee.interests
